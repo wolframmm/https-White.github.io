@@ -185,26 +185,3 @@
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
-
-
-
-<?php
-
-требуется __DIR__ . '/auth.php' ;
-$ логин = getUserLogin();
-
-?>
-< html >
-< голова >
-    < title > Главная страница </ title >
-</ голова >
-< тело >
-<?php  если ( $ логин === ноль ): ?>
-< a  href =" /www/login.php " > Авторизуйтесь </ a >
-<?php  еще : ?>
-Добро пожаловать, <?=  $ логин  ?>
-< бр >
-< a  href =" /logout.php " > Выйти </ a >
-<?php  конец ; ?>
-</ тело >
-</ HTML >
