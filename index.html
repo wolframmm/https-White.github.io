@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/auth.php';
+require __DIR__ . '/auth.html';
 $login = getUserLogin();
 
 ?>
@@ -10,11 +10,11 @@ $login = getUserLogin();
 </head>
 <body>
 <?php if ($login === null): ?>
-<a href="/login.php">Авторизуйтесь</a>
+<a href="/login.html">Авторизуйтесь</a>
 <?php else: ?>
 Добро пожаловать, <?= $login ?>
 <br>
-<a href="/logout.php">Выйти</a>
+<a href="/logout.html">Выйти</a>
 <?php endif; ?>
 </body>
 </html>
