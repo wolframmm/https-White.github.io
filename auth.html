@@ -2,7 +2,7 @@
 
 function checkAuth(string $login, string $password): bool
 {
-    $users = require __DIR__ . '/usersDB.php';
+    $users = require __DIR__ . '/usersDB.html';
 
     foreach ($users as $user) {
         if ($user['login'] === $login
